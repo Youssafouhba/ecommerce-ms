@@ -1,7 +1,3 @@
-spring:
-  application:
-    name: ProductMs
-
 server:
   port: 8083
 
