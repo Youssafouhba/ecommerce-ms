@@ -4,6 +4,12 @@ server:
 product:
   service:
     message: "Bienvenue dans ProductMS !"
+    
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: refresh
 
 eureka:
   client:
