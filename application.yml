@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+  logging:
+    level:
+      root: INFO
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Youssafouhba/msconfiguration.git
+          username: Youssafouhba
+          password: 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
+  application:
+    name: config
+  profiles:
+    active: default
+    
+eureka:
+  client:
+    region: default
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:8082/eureka/
