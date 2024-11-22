@@ -1,8 +1,14 @@
 spring:
   application:
     name: ProductMs
+
 server:
   port: 8083
+
+product:
+  service:
+    message: "Bienvenue dans ProductMS !"
+
 eureka:
   client:
     service-url:
